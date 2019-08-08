@@ -1,0 +1,567 @@
+JIRA Key ID,Summary,Person Filing The Request,Person Needing Access,Systems Need Access To,SecOps Operater Expediting,Time of Access Verification,Mgr of Person Needing Access,Needed for Fixed Time Period,Access Starts On,Must Revoke On,Details of Access Need,Access Request Closed On
+PRODENG-14477,David Bagley Request: JFrog / Artifactory / JumpCloud,Brit Robinson,David Bagley,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-08-01T11:00:00.000-0400,Brandon Ruggirello,,,,David is requesting access to the Vision ISO to be able to provide this to trial customers,2019-08-01T11:01:46.000-0400
+PRODENG-14468,Artifactory lockout: Elman Reyes,Elman Reyes,Elman Reyes,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-31T09:25:00.000-0400,Mitch Rackers,,,,I'm locked out.  Please unlock.,2019-07-31T09:25:28.000-0400
+PRODENG-14465,Offboard Intersys Contractors - re: PRODENG-13161,Mark Brody,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-31T09:42:00.000-0400,Matt Franz,,,,This ticket is being used to track the deprovisioning on intersys contractors from jumpcloud,2019-07-31T09:42:18.000-0400
+PRODENG-14464,sudo access for jumpcloud on ECS instances for Data Integrity team (recipients rails console),Christopher Drappier,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-31T09:27:00.000-0400,Steve Rice,,,,"We need to provide sudo access to ECS instances, particularly for recipients service, that allows the following users to access the docker containers:
+
+[~Christopher.Drappier@cofense.com]
+
+[~Nathaniel.Jones@cofense.com]
+
+[~James.Prior@cofense.com]
+
+[~Tim.Morton@cofense.com]
+
+[~Heather.Renfroe@cofense.com]
+
+[~Jeremy.Ward@cofense.com]",2019-07-31T09:27:19.000-0400
+PRODENG-14461,Access to SecOps analyst role for Chris Rimondi,Brad Shoop,Chris Rimondi,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-30T13:03:00.000-0400,Venkat Pothamsetty,,,,"Requesting access for Chris Rimondi to the SecOps Analyst application role in JumpCloud for the SecOps governance account. This would give him access to the Athena and QuickSight visibility for asset/resource inventories, costs, and cloudtrail.",2019-07-30T13:03:38.000-0400
+PRODENG-14459,Brian Moore needs Jump Cloud access,Felix Tanh,Brian Moore,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>]",,2019-07-31T12:02:00.000-0400,Jeff Orloff,,,,"Brian is the Vision UI UX designer and needs access to Vision UI instances. With the VIS butler change to require zscaler, Brian needs JumpCloud access (so he can access zscaler).
+
+[~Brian.Moore@cofense.com]
+
+Zscaler install instructions: https://confluence.corp.phishme.com/pages/viewpage.action?pageId=39387693",2019-08-01T10:59:40.000-0400
+PRODENG-14423, Vision Artifactory Access,Kamel Tamimi,Kamel Tamimi,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-29T09:07:00.000-0400,Brandon Ruggirello,,2019-06-30,,"I have access to jump cloud (user name kamel.tamimi@phishme.com)
+however I no longer can see the option to access the Artifactory for Vision or Triage.",2019-07-29T09:07:20.000-0400
+PRODENG-14412,Remove Employee Access/Exit Notice - Anne Lerchster,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-26T12:21:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Jessica Cedoz, Jul 26, 11:39 AM
+
+Please remove all access Anne Lerchster, Account Manager in the London area, has to the network, email, and any other accesses she may have effective immediately today, July 26, 2019. Please forward any email to Peter Cole.",2019-07-26T12:21:26.000-0400
+PRODENG-14394,AWS Credentials/Access for Querying List of Hosted Instances,Mitch Rackers,Elman Reyes,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-25T10:47:00.000-0400,Mitch Rackers,,,,"Same access as ticket https://jira.corp.phishme.com/browse/PRODENG-13642.
+
+When we're looking to SSH to a T1 hosted appliance for a variety of support reasons, we currently have to search Jira and Confluence for the appliance IP, which may or may not be correct/up-to-date. I would like to automate generation of an IP list to eliminate this annoyance and time sink for TSE and Support.
+
+As I understand it, the command I'll need to be able to run is:
+
+{code:java}
+aws --profile pmcomadmin ec2 describe-instances --region us-east-1 --query 'Reservations[*].Instances[*].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`].Value|[0],Tags[?Key==`AppUrl`].Value|[0],PublicDnsName]' --filters ""Name=tag:App,Values=Triage 1"" --output text
+{code}
+",2019-07-25T10:47:28.000-0400
+PRODENG-14393,AWS Credentials/Access for Querying List of Hosted Instances,Mitch Rackers,Alex Monroe,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-25T10:46:00.000-0400,Mitch Rackers,,,,"Same access as ticket https://jira.corp.phishme.com/browse/PRODENG-13642.
+
+When we're looking to SSH to a T1 hosted appliance for a variety of support reasons, we currently have to search Jira and Confluence for the appliance IP, which may or may not be correct/up-to-date. I would like to automate generation of an IP list to eliminate this annoyance and time sink for TSE and Support.
+
+As I understand it, the command I'll need to be able to run is:
+
+{code:java}
+aws --profile pmcomadmin ec2 describe-instances --region us-east-1 --query 'Reservations[*].Instances[*].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`].Value|[0],Tags[?Key==`AppUrl`].Value|[0],PublicDnsName]' --filters ""Name=tag:App,Values=Triage 1"" --output text
+{code}
+",2019-07-25T10:47:03.000-0400
+PRODENG-14392,AWS Credentials/Access for Querying List of Hosted Instances,Mitch Rackers,Shawn Jordan,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-25T10:46:00.000-0400,Mitch Rackers,,,,"Same access as ticket https://jira.corp.phishme.com/browse/PRODENG-13642.
+
+When we're looking to SSH to a T1 hosted appliance for a variety of support reasons, we currently have to search Jira and Confluence for the appliance IP, which may or may not be correct/up-to-date. I would like to automate generation of an IP list to eliminate this annoyance and time sink for TSE and Support.
+
+As I understand it, the command I'll need to be able to run is:
+
+{code:java}
+aws --profile pmcomadmin ec2 describe-instances --region us-east-1 --query 'Reservations[*].Instances[*].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`].Value|[0],Tags[?Key==`AppUrl`].Value|[0],PublicDnsName]' --filters ""Name=tag:App,Values=Triage 1"" --output text
+{code}
+",2019-07-25T10:46:36.000-0400
+PRODENG-14367,Koi Repo Access for PS Engineering,Trevor Reed,Martin Brough,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-23T14:24:00.000-0400,Rolando Ruiz,,,,Please provide access to [https://git.pmops.net/engineering/koi-design-system] for the PS Engineering team to begin the Productization of Harbor,2019-07-23T14:24:34.000-0400
+PRODENG-14366,Koi Repo Access for PS Engineering,Trevor Reed,Grant Miller,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-23T13:30:00.000-0400,Martin Brough,,,,Please provide access to [https://git.pmops.net/engineering/koi-design-system] for the PS Engineering team to begin the Productization of Harbor,2019-07-23T13:30:44.000-0400
+PRODENG-14365,Koi Repo access for PS Engineering,Trevor Reed,Trevor Reed,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-23T13:31:00.000-0400,Martin Brough,,,,Please provide access to [https://git.pmops.net/engineering/koi-design-system] for the PS Engineering team to begin the Productization of Harbor,2019-07-23T13:31:10.000-0400
+PRODENG-14358,JumpCloud MFA resetting,Taira Fujita,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>]",,2019-07-23T11:35:00.000-0400,Brandon Ruggirello,,,,"Hi,
+ 
+I had uninstalled Google Authenticator and I can't use MFA authentication so I can’t log in to Jumpcloud by using MFA Verification Code on Google Authenticator.
+ 
+I want to re-install Google Authenticator and re-activate it, So would you please reset my MFA information of my account on Jumpcloud.
+ 
+Kind Regards,
+ 
+Taira Fujita, CISA, CISM, CISSP
+Sales Engineer - Japan
+COFENSE
+O. +81 3 3242 6096
+C. +81 90 6144 6229",2019-07-23T11:36:04.000-0400
+PRODENG-14346,Brice Burgess access to Centralized Governance account,Brad Shoop,Brice Burgess,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-24T12:03:00.000-0400,Brad Shoop,,,,"[~Brice.Burgess@cofense.com] will be assisting with some governance tasks and needs access to Athena, QuickSight and S3 in the centralized governance account. Config may be useful as well to get some exposure into Config rules.",2019-07-24T12:04:05.000-0400
+PRODENG-14335,Ability to See RDS Metrics in AWS,Mitch Rackers,Mitch Rackers,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-22T08:31:00.000-0400,Walter Bergenson,,,,"I just requested/obtained datadog access to see this info, but that's going away. I need the ability to see RDS metrics for hosted T1 systems in AWS for testing a performance-degrading bug fix. Thanks!",2019-07-25T08:31:48.000-0400
+PRODENG-14334,Need Access to Code Climate,Jacob Lashley,Jacob Lashley,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-22T09:57:00.000-0400,Steve Rice,,,,"Trying to debug a pipeline codeclimate issue and I can't seem to login.  I have never logged into it before so I am not sure if I have ever been given access.
+
+[https://codeclimate.pmops.net/login]
+
+I am on the Phishme team so I guess whatever [~Kris.Ellery@cofense.com] has for permissions would work?
+
+[~steve.rice@cofense.com] is my manager and can grant permission if required.",2019-07-23T09:57:41.000-0400
+PRODENG-14317,Remove contractor access - Norbert Lovasz (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:49:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:56 PM (private)
+
+Please remove all access Norbert Lovasz  (contractor) has to any systems immediately today.",2019-07-22T08:49:23.000-0400
+PRODENG-14316,Remove contractor access - Radu Milici (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:49:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:50 PM (private)
+
+Please remove all access Radu Milici  (contractor) has to any systems immediately today.",2019-07-22T08:49:10.000-0400
+PRODENG-14315,Remove contractor access Cassian-Titus Lup (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:48:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:42 PM (private)
+
+Please remove all accessCassian-Titus Lup (contractor) has to any systems immediately today.",2019-07-22T08:48:58.000-0400
+PRODENG-14314,Remove contractor access Robert (Robi) Kudor (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:47:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:26 PM (private)
+
+Please remove all access Robert (Robi) Kudor (contractor) has to any systems immediately today.",2019-07-22T08:47:44.000-0400
+PRODENG-14313,Remove contractor access Andrei Hutusoru (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:47:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:25 PM (private)
+
+Please remove all access Andrei Hutusoru (contractor) has to any systems immediately today.",2019-07-22T08:48:10.000-0400
+PRODENG-14312,Remove contractor access Cristina Caescu (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:48:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:24 PM (private)
+
+Please remove all access Cristina Caescu (contractor) has to any systems immediately today.",2019-07-22T08:48:26.000-0400
+PRODENG-14310,Remove contractor access Sergui Bucerzan (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T09:32:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:22 PM (private)
+
+Please remove all access Sergui Bucerzan (contractor) has to any systems immediately today.",2019-07-22T09:32:58.000-0400
+PRODENG-14309,Remove contractor access Liviu Marcoci (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:47:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:22 PM (private)
+
+Please remove all access Liviu Marcoci (contractor) has to any systems immediately today.",2019-07-22T08:47:32.000-0400
+PRODENG-14308,Remove contractor access Andrei Rus (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:47:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:21 PM (private)
+
+Please remove all access Andrei Rus (contractor) has to any systems immediately today.",2019-07-22T08:47:20.000-0400
+PRODENG-14307,Remove contractor access Zoltan Nemes (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:47:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:19 PM (private)
+
+Please remove all access Zoltan Nemes (contractor) has to any systems immediately today.",2019-07-22T08:47:55.000-0400
+PRODENG-14306,Remove contractor access Iulia Mada (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:49:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:18 PM (private)
+
+Please remove all access Iulia Mada (contractor) has to any systems immediately today.",2019-07-22T08:49:35.000-0400
+PRODENG-14305,Remove contractor access - Andrei Perjui (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:46:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:17 PM (private)
+
+Please remove all access Andrei Perjui (contractor) has to any systems immediately today.",2019-07-22T08:47:08.000-0400
+PRODENG-14303,Remove contractor access - Octavian Neacsu (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:48:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:16 PM (private)
+
+Please remove all access Octavian Neacsu (contractor) has to any systems immediately today.",2019-07-22T08:48:37.000-0400
+PRODENG-14302,Remove contractor access - Cosmin Cosma (contractor),svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:48:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 19, 4:15 PM (private)
+
+Please remove all access Cosmin Cosma  (contractor) has to any systems immediately today.",2019-07-22T08:48:48.000-0400
+PRODENG-14248,Ability to See AWS RDS Resource Usage for Triage,Mitch Rackers,Mitch Rackers,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-19T15:59:00.000-0400,Walter Bergenson,,,,"I'm testing a bugfix for heavy Triage DB usage. I'd like to be able to see how often the RDS instance is hitting swap.
+
+
+Edit: Disregard. I found the data I need on Datadog.",2019-07-19T15:59:19.000-0400
+PRODENG-14246,publickey commit access for elizabeth snead,Christopher Drappier,,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-19T13:22:00.000-0400,Rachel Dall,,,,"we are moving some documentation out of confluence and into gitlab. Elizabeth already has a gitlab account and access to the correct repo, we just want to get her ssh publickey added so that she can checkout/commit.",2019-07-19T13:22:29.000-0400
+PRODENG-14243,Remove Employee Access/Exit Notice – Eric Taylor,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-22T08:51:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Lina Towles, Jul 19, 11:31 AM
+
+Please remove all access Eric Taylor, Technical Lead SIM in the NC area (virtual), has to the network, email, and any other accesses he may have effective 12pm EDT today, July 19th. Please forward any email to Steve Rice. Thank you!",2019-07-22T08:51:45.000-0400
+PRODENG-14241,JumpCloud perpetual Sudo access to Stats Service (COYOTE) ECS instances,Jeremy Ward,Jeremy Ward,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>]",,2019-07-19T10:23:00.000-0400,Brian Cheung,,,,"[~Jeremy.Ward@cofense.com] is an engineer on the Customer Self-Service (SELFSVC, Recursive Ravens) team. As part of the Customer Self-Service responsibilities, we provide production support and triage and debug customer issues with Stats Service / COYOTE.
+
+[~Jeremy.Ward@cofense.com] previously was granted access under https://jira.corp.phishme.com/browse/PRODENG-13621 but subsequently lost access when those instances were reprovisioned.
+
+Please enable SSH access with perpetual sudo via JumpCloud for [~Jeremy.Ward@cofense.com] to all Stats Service servers. Sudo access is required in order to run 'docker ps' and to connect to the containers running Stats Service.
+
+Access is currently required indefinitely. Once Stats Service is migrated to Ground Control and has a Jenkins pipeline for running rake tasks, we can revisit removing this access.
+
+[~Brian.Cheung@cofense.com] is the manager for both [~Nathaniel.Jones@cofense.com] and [~Jeremy.Ward@cofense.com] and approves the request.",2019-07-23T10:23:53.000-0400
+PRODENG-14233,New User Provisioning: Jonathan Russell Jonathan.Russell@cofense.com - Information Security Program Manager,Albert Shagivaliev,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-18T10:18:00.000-0400,Chris Sheppard,,2019-07-21,,"Jonathan Russell Jonathan.Russell@cofense.com needs a JumpCloud account based on their role as Information Security Program Manager for 1015 Eng - Sim. Please refer to the following documents to grant access based on their role and confirm with their manager that they have necessary access:
+
+[Roles and Access Map(non-contractor)|https://confluence.corp.phishme.com/pages/viewpage.action?pageId=68291334]
+ * Start Date: 7/22/2019
+ * Name:  Jonathan Russell
+ * Manager:  Chris Sheppard
+ * Department:  1015 Eng - Sim",2019-07-25T10:18:18.000-0400
+PRODENG-14230,Raygun access,Joanna Shih,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-18T12:50:00.000-0400,Joanna Shih,,,,"Please provision Raygun access (via JC) for:
+ * [~Joanna.Shih@cofense.com]
+ * [~Lee.Barker@cofense.com]",2019-07-19T12:50:32.000-0400
+PRODENG-14195,Access Request - Jon Gentsch: Tenable.io,Rob Vrooman,Jon Gentsch,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-17T16:55:00.000-0400,Brandon Tylke,,,,"Need access to Tenable.io to verify that the Nessus Agents installed on the Intelligence Teams servers are properly setup.
+
+ 
+
+2 groups being created by the Intelligence Team in Tenable are:
+
+Dev_Intelligence_hosts
+
+Intelligence_hosts",2019-07-17T16:56:13.000-0400
+PRODENG-14194,Access Request - Rob Vrooman: Tenable.io,Rob Vrooman,Rob Vrooman,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-17T16:56:00.000-0400,Brandon Tylke,,,,"Need access to Tenable.io to verify that the Nessus Agents installed on the Intelligence Teams servers are properly setup.
+
+ 
+
+2 groups being created by the Intelligence Team in Tenable are:
+
+Dev_Intelligence_hosts
+
+Intelligence_hosts",2019-07-17T16:56:31.000-0400
+PRODENG-14182,Terminating Nefertiti- Recruiting Temp via Alternative Employment Specialists,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-17T15:10:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 17, 11:10 AM (private)
+
+Hello all,
+
+ Nefertiti has given notice and so her last day will 7/17/2019 ( end of day).  5PM EST",2019-07-17T15:10:34.000-0400
+PRODENG-14181,Remove Employee Access/Exit Notice – Dev Sen,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-17T15:10:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Lina Towles, Jul 17, 11:03 AM
+
+Please remove all access Dev Sen, Payroll Accountant in the Leesburg office, has to the network, email, and any other accesses she may have effective 12pm EDT today, July 17th. Please forward any email to Brian Haynes. Thank you!",2019-07-17T15:11:08.000-0400
+PRODENG-14173,Please grant Rob Vrooman access to devops/pm_ansible within gitlab.,Russell Francis,Rob Vrooman,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-17T22:00:00.000-0400,Brandon Tylke,,2019-07-16,,"Please grant [~Rob.Vrooman@cofense.com] developer access to the ""devops/pm_ansible"" project.",2019-07-18T15:27:53.000-0400
+PRODENG-14172,Please grant Jon Gentsch access to devops/pm_ansible within gitlab.,Russell Francis,Jon Gentsch,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-18T15:27:00.000-0400,Brandon Tylke,,2019-07-16,,"Please grant [~Jon.Gentsch@cofense.com] developer access to the ""devops/pm_ansible"" project.",2019-07-18T15:27:12.000-0400
+PRODENG-14166,GitLab Access for Micheal Palmer,Grant Miller,Micheal Palmer,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-17T15:25:00.000-0400,Rolando Ruiz,,2019-07-15,,"Please provide viewing access to the devops-terraforms project in GitLab. Micheal Palmer needs to be able to view ACL update commits that are attached to the Jira tickets he submits, to verify if certain IP addresses are listed on managed Triage ACLs when customers email and request access.
+
+ 
+
+Please Slack me if there are any questions. Thank you!",2019-07-18T15:25:44.000-0400
+PRODENG-14144,"Access to ""Reporter Prod Platform"" and ""Houston Prod"" AWS/JC account",Dan Popp,Dan Popp,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-15T16:36:00.000-0400,Chris Rimondi,,,,As a production engineer I need credentials for Houston-prod and cofense-reporter-prod-platform AWS accounts.,2019-07-15T16:36:21.000-0400
+PRODENG-14140,Please remove all access Brandon Arron,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-15T16:20:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Prudhvi Bobba, Jul 15, 2:19 PM (private)
+
+
+_Please remove all access Brandon Arron (contractor) has to any systems immediately today,7/15/2019. He has a MacBook that will need to be returned._",2019-07-15T16:20:37.000-0400
+PRODENG-14124,Isaac Jones needs Jump Cloud access,Felix Tanh,Isaac Jones,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>]",,2019-07-15T12:02:00.000-0400,Jeff Orloff,,,,"Isaac is the Vision UI UX designer and needs access to Vision UI instances. With the VIS butler change to require zscaler, Isaac needs JumpCloud access (so he can access zscaler).
+
+[~Isaac.Jones@cofense.com]
+
+Zscaler install instructions: https://confluence.corp.phishme.com/pages/viewpage.action?pageId=39387693",2019-07-18T15:26:22.000-0400
+PRODENG-14123,Remove Employee Access/Exit Notice : Brian Stone,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-15T13:19:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Jessica Cedoz, Jul 15, 9:47 AM
+
+Please remove all access Brian Stone, SVP of Global Sales in the TX area, has to the network, email, and any other accesses he may have effective immediately today, July 15, 2019. Please forward any email to Brandi Moore.",2019-07-15T13:19:28.000-0400
+PRODENG-14103,Remove Employee Access / Exit Notice - Karin Hjerstedt,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-12T12:23:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Mikayla Kim, Jul 12, 2:30 PM
+
+Please remove all access Karin Hjerstedt, Channel Operations Manager in the CA area, has to the network, email, and any other accesses she may have effective **5:00 pm EDT today,** July 12, 2019. Please forward any email to Robert Iannicello.
+
+Thank you,
+Mikayla",2019-07-22T12:23:26.000-0400
+PRODENG-14102,Remove Employee Access/Exit Notice – Lauren Lamp,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-12T12:24:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Lina Towles, Jul 12, 2:29 PM
+
+Please remove all access Lauren Lamp, Certification and Vendor Manager, in the WA area (virtual), has to the network, email, and any other accesses she may have effective **8:00pm EDT** today, July 12th. Please forward any email to Rick Ash. Thank you!",2019-07-22T12:24:26.000-0400
+PRODENG-14100,Raygun access request,Jac Bergenson,Jac Bergenson,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-11T14:35:00.000-0400,Rachel Dall,,,,"Requesting Raygun access for my account. Request has been authorized by [~Rachel.Dall@cofense.com]. 
+
+Re: roles required. Basic role is fine -- incl. read only if this is an option.",2019-07-12T14:35:22.000-0400
+PRODENG-14096,Zscaler Access,Matt Miller,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-12T13:36:00.000-0400,Steve Rice,,,,"When I click on Zscaler from Jumpcloud I get the following, which gives me a hint that I do not have an account:
+
+{{{""nameid"":""matt.miller@cofense.com"",""orgId"":null,""idpEntityID"":null,""idpId"":null,""saml_attributes"":{},""samlassertion"":null}}}",2019-07-22T13:36:53.000-0400
+PRODENG-14085,AWS Access Scope,Matt Miller,Matt Miller,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>]",,2019-07-11T11:20:00.000-0400,Steve Rice,,,,"Currently my AWS access is very limited to read for Dev and Commercial. Inside each of those accounts, I can not see any running instances. I am looking to get access, equivalent to Dave Chamberlin our other Architect.
+
+Tagging [~steve.rice@cofense.com] for approval.",2019-07-12T11:20:19.000-0400
+PRODENG-14072,Grant DJ access to the Azure information in the Shared-ProductionEngineering-PROD in LastPass,DJ Yarber,DJ Yarber,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-10T17:36:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+QA
+
+*Summary*
+DJ needs access to the Azure information in the Shared-ProductionEngineering-PROD folder in LastPass
+
+This is needed so DJ can generate Vision instances in/using Azure for testing",2019-07-10T17:36:36.000-0400
+PRODENG-14071,Vision team need access to Vision-OVAs at Artifactory ,Tomas Noriega,Tomas Noriega,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-10T15:28:00.000-0400,Trey Jones,,,,"Vision team need access to Vision-OVAs at Artifactory:
+[https://packages.cofense-tools.com/artifactory/webapp/#/artifacts/browse/tree/General/vision-ova/vmware/qa/ova]
+
+Team members who need access:
+tomas.noriega@cofense.com
+DJ.Yarber@cofense.com
+Vineetha.Philip@cofense.com
+Van.Panyanouvong@cofense.com
+Alvin.Hemnath@cofense.com
+James.Newton@cofense.com
+Matt.Harrington@cofense.com
+Trey.Jones@cofense.com
+
+ 
+
+ ",2019-07-10T15:29:05.000-0400
+PRODENG-14070,Grant Matt access to the Vision OVA artifacts,DJ Yarber,Matt Harrington,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-22T13:52:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+Developer
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T13:52:31.000-0400
+PRODENG-14069,Grant Alvin access to the Vision OVA artifacts,DJ Yarber,Alvin Hemnath,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-22T13:55:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+Developer
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T13:56:04.000-0400
+PRODENG-14068,Grant James access to the Vision OVA artifacts,DJ Yarber,James Newton,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-22T13:53:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+Developer
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T13:53:33.000-0400
+PRODENG-14067,Grant Vineetha access to the Vision OVA artifacts,DJ Yarber,Vineetha Philip,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-22T13:55:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+Developer
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T13:55:27.000-0400
+PRODENG-14066,Grant Van access to the Vision OVA artifacts,DJ Yarber,Van Panyanouvong,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-22T13:52:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+Developer
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T13:53:00.000-0400
+PRODENG-14065,Grant Tomas access to the Vision OVA artifacts,DJ Yarber,Tomas Noriega,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-22T13:54:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+Developer
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T13:54:26.000-0400
+PRODENG-14064,Grant Trey access to the Vision OVA artifacts,DJ Yarber,Trey Jones,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-22T13:46:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+Dev Manager
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T13:46:55.000-0400
+PRODENG-14063,Grant DJ access to the Vision OVA artifacts,DJ Yarber,DJ Yarber,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-10T12:49:00.000-0400,Trey Jones,,,,"*Team*
+Vision
+
+*Role*
+QA
+
+*Purpose*
+Access is needed to retrieve OVAs for standing up Vision instances for testing.",2019-07-22T12:49:56.000-0400
+PRODENG-14053,Gitlab api key with lower permissions for sharing and CI/CD,James Prior,,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-11T08:07:00.000-0400,Brian Cheung,,,,"As part of https://git.pmops.net/saas/mgmt/merge_requests/6210 I'd like to have a gitlab user, say `phishme-bot` that we can add to mgmt, landing, stats, and recipients (the phishme products), use it to generate an API key, and then share the API key with developers via lastpass and maybe in the future jenkins deploys.
+
+Looking at https://git.pmops.net/help/user/permissions I think if we have the user added to the projects as a Reporter it will get us read only permissions.
+
+Ultimately, I'd like to take a git sha or ref and get a pipeline status for it which we can use to check for compliance before deploying.  Here's a snippet that should return some JSON with a valid key and access to the mgmt repo:
+
+curl --header ""Private-Token: $GITLAB_API_KEY"" ""https://git.pmops.net/api/v4/projects/12/repository/commits/4930d304af90f25ec14e20a024a6b03808581549""",2019-07-11T08:07:16.000-0400
+PRODENG-13991,Christopher Drappier - Sim Dev Artifactory Access,Mark Brody,Christopher Drappier,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-07-09T11:06:00.000-0400,Steve Rice,,,,"Following up on ticket https://jira.corp.phishme.com/browse/PRODENG-13990 
+
+Adding [~Christopher.Drappier@cofense.com] - The reason the gems repo is not available is due to a permission issue in artifactory. The suggestion is to add Chistopher to the ARTIFACTORY_ldap_sim_devs group via jumpcloud to allow artifactory access. 
+
+[~steve.rice@cofense.com] do you approve this access request?",2019-07-09T11:06:54.000-0400
+PRODENG-13988,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",Russell Francis,Russell Francis,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-02T13:39:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Russell Francis reporter level access to the git repository.
+
+https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",2019-07-08T13:40:06.000-0400
+PRODENG-13987,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",Russell Francis,Rich Denis,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-01T13:39:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Rich Denis reporter level access to the git repository.
+
+https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",2019-07-08T13:39:15.000-0400
+PRODENG-13986,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",Russell Francis,Bruce Hartley,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-01T13:38:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Bruce Hartley reporter level access to the git repository.
+
+https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",2019-07-08T13:38:47.000-0400
+PRODENG-13985,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",Russell Francis,Anthony Locke,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-08T13:38:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Anthony Locke reporter level access to the git repository.
+
+https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",2019-07-08T13:38:16.000-0400
+PRODENG-13984,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",Russell Francis,Vladimir Kamenev,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-01T13:37:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Vladimir Kamenev reporter level access to the git repository.
+
+https://git.pmops.net/phishme-responsive-delivery/responsive-delivery/",2019-07-08T13:37:34.000-0400
+PRODENG-13983,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/devops-terraforms/stats_terraform",Russell Francis,Rich Denis,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-01T13:36:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Rich Denis reporter level access to the git repository.
+
+https://git.pmops.net/devops-terraforms/stats_terraform",2019-07-08T13:36:41.000-0400
+PRODENG-13982,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/devops-terraforms/stats_terraform",Russell Francis,Bruce Hartley,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-01T13:35:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Bruce Hartley reporter level access to the git repository.
+
+https://git.pmops.net/devops-terraforms/stats_terraform",2019-07-08T13:36:03.000-0400
+PRODENG-13981,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/devops-terraforms/stats_terraform",Russell Francis,Anthony Locke,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-01T13:35:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Anthony Locke reporter level access to the git repository.
+
+https://git.pmops.net/devops-terraforms/stats_terraform",2019-07-08T13:35:31.000-0400
+PRODENG-13980,"Please grant ""Reporter"" level access to the git repository https://git.pmops.net/devops-terraforms/stats_terraform",Russell Francis,Vladimir Kamenev,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-08T13:34:00.000-0400,Rich Denis,,2019-07-07,,"Please grant Vladimir Kamenev reporter level access to the git repository.
+
+https://git.pmops.net/devops-terraforms/stats_terraform",2019-07-08T13:34:31.000-0400
+PRODENG-13969,Remove Employee Access/Exit Notice – Olu Odeniyi,svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-08T08:16:00.000-0400,Mark Zigadlo,,,,"----------------------------------------------
+
+Reena Sidar, Jul 8, 11:26 AM (private)
+
+Please remove all access Olu Odeniyi, Administrative Temporary Worker in the London Office, has to the network, email, and any other accesses she may have effective immediately, today, July 8th, 2019. Please forward emails to Danielle Weeden Thank you!",2019-07-08T08:16:48.000-0400
+PRODENG-13961,Add Doug Finley to Zscaler Jumpcloud Group,Mark Brody,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-05T11:02:00.000-0400,Ray Nicholus,,2019-07-04,,"[~Ray.Nicholus@cofense.com] it appears that [~Doug.Finley@cofense.com] was missing zscaler access. I wanted to confirm that adding this access is approved, just to check the boxes. Thanks in advance!",2019-07-05T11:02:06.000-0400
+PRODENG-13951,DataDog API Key for Triage 1,Mark Brody,Catalin Costras 3pg,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-11T16:23:00.000-0400,Matt Franz,,,,"Per our slack discussion, [~Catalin.Costras.3pg@cofense.com] has requested an API key for triage1 event debugging. I've created the key, [~Matt.Franz@cofense.com] please confirm if this access is approved. ",2019-07-11T16:24:20.000-0400
+PRODENG-13950,New User Provisioning: Brandon Aaron - Brandon.Aaron@cofense.com - Principal Engineer,Ben Heater,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-05T12:30:00.000-0400,Dave Alison,,2019-07-08,,"Brandon Aaron - Brandon.Aaron@cofense.com needs a JumpCloud account based on their role as Principal Engineer for Engineering. Please refer to the following documents to grant access based on their role and confirm with their manager that they have necessary access:
+
+[Roles and Access Map(non-contractor)|https://confluence.corp.phishme.com/pages/viewpage.action?pageId=68291334]
+ * Start Date: 7/9/19 (sorry ticket was submitted just yesterday evening)
+ * Name: Brandon Aaron
+ * Manager: Dave Alison - Dave.Alison@cofense.com
+ * Department: 1000 Engineering
+
+ ",2019-07-05T12:30:09.000-0400
+PRODENG-13936,Code climate Access - SIM - MGMT ,John Moon,John Moon,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-02T11:30:00.000-0400,Brian Cheung,,,,"Error says 
+ `Ask an organization owner to add john.moon.`
+
+[https://codeclimate.pmops.net/repos/58afb8c6818fb40072000007/pull/6184]
+
+ 
+
+I would need access to Landing, Rugs, Mgmt",2019-07-03T11:31:13.000-0400
+PRODENG-13935,GitLab Repo access for Bruce Hartley,Russell Francis,Bruce Hartley,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-02T11:48:00.000-0400,Rich Denis,,,,"Developer access needs to be granted to the lms/iomad repository in gitlab.  I am not able to see this repository and cannot determine who the owner is.
+
+This request is for Bruce Hartley who is working for Arete Advisors and performing the code audit as part of the CFIUS proceedings.
+
+Please let me know if you have any questions or concerns.",2019-07-03T11:48:12.000-0400
+PRODENG-13934,Gitlab Repo access for Anthony Locke,Jeff Koors,Anthony Locke,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-02T11:47:00.000-0400,Rich Denis,,,,"Developer access needs to be granted to the lms/iomad repository in gitlab.  I am not able to see this repository and cannot determine who the owner is.
+
+This request is for Anthony Locke who is working for Arete Advisors and performing the code audit as part of the CFIUS proceedings.
+
+Please let me know if you have any questions or concerns.",2019-07-03T11:47:48.000-0400
+PRODENG-13933,Access for Vladimir Kamenev to LMS/IOMAD Repo in Git,Russell Francis,Vladimir Kamenev,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-02T11:48:00.000-0400,Rich Denis,,,,"Developer access needs to be granted to the lms/iomad repository in gitlab.  I am not able to see this repository and cannot determine who the owner is.
+
+This request is for Vladimir Kamenev who is working for Arete Advisors and performing the code audit as part of the CFIUS proceedings.
+
+Please let me know if you have any questions or concerns.",2019-07-03T11:49:08.000-0400
+PRODENG-13929,Write access for AWS CLI on LMS instances to S3 bucket 'pm-lms-prod-uploaded-assets-us-east-1',Jacob Kindle,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-02T22:50:00.000-0400,Tammy Belgarde,,,,"We are doing a new method of course deployment using the S3 bucket pm-lms-prod-uploaded-assets-us-east-1 and it's working well for pulling courses down to LMS instances. However, I wondered if there was a way for us to get write access from the AWS CLI on LMS instances as well so I can upload courses to that bucket from the LMS instances. Currently it seems to be read only access.",2019-07-02T22:51:03.000-0400
+PRODENG-13924,Datadog Access for TSE - Alex Monroe,Mitch Rackers,Alex Monroe,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-08T12:39:00.000-0400,Mitch Rackers,,,,,2019-07-08T12:39:49.000-0400
+PRODENG-13923,Datadog Access for TSE - Elman Reyes,Mitch Rackers,Elman Reyes,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-08T12:40:00.000-0400,Mitch Rackers,,,,,2019-07-08T12:40:07.000-0400
+PRODENG-13922,Datadog Access for TSE - Shawn Jordan,Mitch Rackers,Shawn Jordan,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-08T12:40:00.000-0400,Mitch Rackers,,,,,2019-07-08T12:40:27.000-0400
+PRODENG-13921,Datadog Access for TSE - Mitch Rackers,Mitch Rackers,Mitch Rackers,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-03T11:49:00.000-0400,Walter Bergenson,,,,Requesting access to datadog for viewing system stats for troubleshooting customer issues and improving T1 efficiency. ,2019-07-03T11:49:46.000-0400
+PRODENG-13920,{{ticket.title}},svc CofenseIT Zendesk,,"[<JIRA CustomFieldOption: value='Off-boarding', id='11920'>]",,2019-07-02T16:39:00.000-0400,Mark Zigadlo,,,,{{ticket.description}},2019-07-02T16:40:32.000-0400
+PRODENG-13916,DataDog Access for Darrel Rendell,Jeff Koors,Darrel Rendell,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-02T09:32:00.000-0400,Mollie MacDougall,,,,"*Use*: 
+Evaluate DataDog for collecting system information about intelligence systems. 
+
+The *Ask*:
+Would it be possible to create accounts 
+
+*PERMISSION - ROLE* : allowing these developers to see what DataDog has to offer and evaluate whether it would be beneficial for the Intelligence product line.",2019-07-03T09:32:55.000-0400
+PRODENG-13915,DataDog Access for Rob Vrooman,Jeff Koors,Rob Vrooman,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-02T09:32:00.000-0400,Brandon Tylke,,,,"*Use*: 
+Evaluate DataDog for collecting system information about intelligence systems. 
+
+The *Ask*:
+Would it be possible to create accounts 
+
+*PERMISSION - ROLE* : allowing these developers to see what DataDog has to offer and evaluate whether it would be beneficial for the Intelligence product line.",2019-07-03T09:32:20.000-0400
+PRODENG-13914,DataDog Access for Jon Gentsch,Jeff Koors,Jon Gentsch,"[<JIRA CustomFieldOption: value='DataDog', id='11904'>]",,2019-07-02T09:32:00.000-0400,Brandon Tylke,,,,"*Use*: 
+Evaluate DataDog for collecting system information about intelligence systems. 
+
+The *Ask*:
+Would it be possible to create accounts 
+
+*PERMISSION - ROLE* : allowing these developers to see what DataDog has to offer and evaluate whether it would be beneficial for the Intelligence product line.",2019-07-03T09:32:42.000-0400
+PRODENG-13704,New User Provisioning: Matt Miller - matt.miller@cofense.com - Software Architect,Ben Heater,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2018-06-24T12:35:00.000-0400,Steve Rice,,2019-06-23,,"Matt Miller - [matt.miller@cofense.com|mailto:matt.miller@cofense.com] - needs a JumpCloud account based on their role as Software Architect for Eng-Sim. Please refer to the following documents to grant access based on their role and confirm with their manager that they have necessary access:
+
+[Roles and Access Map(non-contractor)|https://confluence.corp.phishme.com/pages/viewpage.action?pageId=68291334]
+ * Start Date: 06/24/19
+ * Name: Matt Miller
+ * Manager: Steve Rice
+ * Department: 1015 Eng-Sim
+
+ ",2019-07-05T12:35:53.000-0400
+PRODENG-13642,AWS Credentials/Access for Querying List of Hosted Instances,Mitch Rackers,Mitch Rackers,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-09T13:53:00.000-0400,Walter Bergenson,,,,"When we're looking to SSH to a T1 hosted appliance for a variety of support reasons, we currently have to search Jira and Confluence for the appliance IP, which may or may not be correct/up-to-date. I would like to automate generation of an IP list to eliminate this annoyance and time sink for TSE and Support.
+
+As I understand it, the command I'll need to be able to run is:
+
+{code:java}
+aws --profile pmcomadmin ec2 describe-instances --region us-east-1 --query 'Reservations[*].Instances[*].[InstanceId,PrivateIpAddress,Tags[?Key==`Name`].Value|[0],Tags[?Key==`AppUrl`].Value|[0],PublicDnsName]' --filters ""Name=tag:App,Values=Triage 1"" --output text
+{code}
+",2019-07-10T13:53:22.000-0400
+PRODENG-13621,JumpCloud Sudo access to Stats Service (COYOTE) ECS instances,Nathaniel Jones,Jeremy Ward,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>]",,2019-06-12T13:59:00.000-0400,Brian Cheung,,,,"[~Jeremy.Ward@cofense.com] is an engineer on the Customer Self-Service (SELFSVC, Recursive Ravens) team. As part of the Customer Self-Service responsibilities, we provide production support and triage and debug customer issues with Stats Service / COYOTE.
+
+Please enable SSH access with sudo via JumpCloud for [~Jeremy.Ward@cofense.com] to all Stats Service servers. Sudo access is required in order to run 'docker ps' and to connect to the containers running Stats Service.
+
+Access is currently required indefinitely. Once Stats Service is migrated to Ground Control and has a Jenkins pipeline for running rake tasks, we can revisit removing this access.
+
+[~Brian.Cheung@cofense.com] is the manager for both [~Nathaniel.Jones@cofense.com] and [~Jeremy.Ward@cofense.com] and approves the request.",2019-07-22T13:59:36.000-0400
+PRODENG-13618,Git.pmops.net account for Egor Emeliyanov,Jeff Koors,Egor Emeliyanov,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-06-10T09:57:00.000-0400,Mark Zigadlo,,,,"Good morning,
+
+I need a Git.pmops.net account created, so I could deploy Drop to the German cloud. My Cofense username is egor.emeliyanov@phishme.com , primary email address egor.emeliyanov@cofense.com
+
+Please let me know if you need anything else. Thank you.
+
+~Egor",2019-07-02T09:57:51.000-0400
+PRODENG-13617,Remove George Adams from ProdEng-Appliance Group,Jeff Koors,George Adams,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-06-12T09:55:00.000-0400,Matt Franz,,,2019-06-12T09:38:00.000-0400,"Since you know, he doesn't work here anymore.  I understand his account's blocked and it's not like anything can happen, this is just some general housekeeping.
+
+https://git.pmops.net/groups/prodeng-appliance/-/group_members",2019-07-02T09:56:01.000-0400
+PRODENG-13615,Adding Gitlab Access for documentation of personal work and other access.,Dan Clark,Dan Clark,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-07-03T09:11:00.000-0400,Andy Spencer,,,,"I need access to read [https://git.pmops.net/nextgen/shamwow/tree/develop/src/main/postman]
+
+I would also benefit from using Gitlab for code/scripts I am writing. ",2019-07-03T09:11:13.000-0400
+PRODENG-13582,Write access for AWS CLI on LMS instances to S3 bucket 'pm-lms-prod-uploaded-assets-us-east-1',Jacob Kindle,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-07-05T13:37:00.000-0400,Tammy Belgarde,,,,"We are doing a new method of course deployment using the S3 bucket pm-lms-prod-uploaded-assets-us-east-1 and it's working well for pulling courses down to LMS instances. However, I wondered if there was a way for us to get write access from the AWS CLI on LMS instances as well so I can upload courses to that bucket from the LMS instances. Currently it seems to be read only access.",2019-07-05T13:38:02.000-0400
+PRODENG-13542,grant brice access to admin role in houston-aws-prod account ,Brice Burgess,,"[<JIRA CustomFieldOption: value='Other', id='11906'>]",,2019-06-07T13:59:00.000-0400,Chris Rimondi,,,,Is it possible to be granted access to the admin role in houston-aws-prod account? I'd like to be able to examine infrastructure and run the bootstrap if necessary. right now I'm having issues w/ determining the mc_operators permission.,2019-07-22T14:00:01.000-0400
+PRODENG-13540,Exit Request - John McCabe,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:00:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:00:27.000-0400
+PRODENG-13539,Exit Request - Marc Makowski,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:01:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:01:32.000-0400
+PRODENG-13538,Exit Request - Kyle Paris,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:01:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:01:59.000-0400
+PRODENG-13537,Exit Request - Garrett Primm,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:02:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:02:21.000-0400
+PRODENG-13536,Exit Request - Deron Dasilva,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:02:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:02:47.000-0400
+PRODENG-13535,Exit Request - Michael Ganis,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:03:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:03:47.000-0400
+PRODENG-13534,Exit Request - Nik Kalogirou,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:04:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:04:15.000-0400
+PRODENG-13533,Exit Request - Scott Renna,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:04:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:04:41.000-0400
+PRODENG-13532,Exit Request - Scott Renna,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-06-07T14:04:00.000-0400,Jessica Cedoz,,,,"|*Jessica Cedoz* (Cofense IT)
+Jun 6, 2:28 PM EDT
+Please remove all access Scott Renna, Global Director of Client Success in the Salt Lake City, UT area, has to the network, email, and any other accesses he may have effective immediately, today, June 6, 2019. Please forward any email to Mark Zigadlo.|",2019-07-22T14:05:09.000-0400
+PRODENG-13531,Exit Request - Scott Greaux,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>, <JIRA CustomFieldOption: value='Jenkins', id='11903'>]",,2019-06-07T14:05:00.000-0400,Keith Ibarguen,,,,,2019-07-22T14:05:34.000-0400
+PRODENG-13530,Exit Request - Jacob Heater,Venkat Pothamsetty,,"[<JIRA CustomFieldOption: value='JumpCloud', id='11900'>, <JIRA CustomFieldOption: value='GitLab', id='11901'>, <JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-06-07T13:58:00.000-0400,Mikayla Kim,,,,"##- Please type your reply above this line -##
+|
+|!https://secure.gravatar.com/avatar/6a3e0cf945216094d5aa4cd451df1234?size=40&default=https%3A%2F%2Fassets.zendesk.com%2Fimages%2F2016%2Fdefault-avatar-80.png&r=g|width=40,height=40!|*Mikayla Kim* (Cofense IT)
+Jun 7, 11:46 AM EDT
+Please remove all access Jacob Heater, Software Engineer II in the VA area, has to the network, email, and any other accesses he may have effective *1:30 pm EDT* today, June 7, 2019. Please forward email to Rich Denis.
+
+Thank you,
+Mikayla|
+|",2019-07-22T13:58:37.000-0400
+PRODENG-13515,Requesting GitLab access,Ed Hallam,,"[<JIRA CustomFieldOption: value='GitLab', id='11901'>]",,2019-06-06T13:57:00.000-0400,Rachel Dall,,,,"Requesting access for Elizabeth Snead for GitLab to bring our permissions on par with fellow PO Jac Bergenson.
+
+ 
+
+Current need is access to assist with the Repeat offenders validation work. Access to GitLab will allow us to utilize tools created for the Product team as well as review discussions and test cases in merge requests.",2019-07-22T13:57:56.000-0400
+PRODENG-13511,JumpCloud token is invalid,Joseph Barker,,,,2019-06-06T13:57:00.000-0400,,,,,Jumpcloud is stating my token is invalid.  I am unable to access my account to complete my work.,2019-07-22T13:57:30.000-0400
+PRODENG-13409,Environment access for John Cato,John Cato,,,,2019-05-30T13:56:00.000-0400,,,,,"I will be going on-call primary next week. I need to make sure I have access to all of our environments before then.
+
+ 
+
+!image-2019-05-30-09-34-06-489.png!",2019-07-22T13:56:44.000-0400
+PRODENG-13399,Artifactory Access to Vision Dependencies,Brett Lischalk,Brett Lischalk,"[<JIRA CustomFieldOption: value='Artifactory', id='11902'>]",,2019-05-29T13:55:00.000-0400,Trey Jones,,,,"I am working on a security assessment of the Vision application. As part of this assessment, I need to build the application locally but am currently un-able to access the necessary artifacts within Artifactory. After speaking with the Vision team I need to request access to the following repositories within Artifactory:
+
+ 
+
+https://packages.cofense-tools.com:443/artifactory/gradle-remote
+https://packages.cofense-tools.com:443/artifactory/plugins-release
+https://packages.cofense-tools.com:443/artifactory/ibs-release
+
+artifactory.docker.registry.release=ng-docker.packages.cofense-tools.com
+artifactory.docker.registry.snapshot=ng-docker.packages.cofense-tools.com/snapshot
+
+ 
+
+Please let me know if any additional information is needed.",2019-07-22T13:56:06.000-0400
+PRODENG-13316,Please grant admin_non_US ability to change tags on running instances,Cosmin Cosma 3pg,,,,2019-05-30T15:47:00.000-0400,Chris Rimondi,,,,"In the process of executing PRODENG-13183 (ZombieLoad Patching for SaaS Systems) we need to fix tagging of running EC2 instance:
+ * PRODENG-13046
+ * PRODENG-13313
+ * PRODENG-13314
+
+When trying to change the tags of a running ec2 instance we get an error:
+{code:java}
+You are not authorized to perform this operation. Encoded authorization failure message: KP1HDgQKd9Nme-IQJtJujIpgnUTmqaU77kJHEF04VNLb50zOAcmUQeawzMwPsilzMLL0Zqo3r-w5KTFYTRL8MgmkXGLnznIuEae0KzEmKpVrRXXQmSkPrZ8ASZZ7jRO5cDCiA4A4JiRw0MSPxACXgGiyReCWW24iKRSX16DGFPtCC1GpChSeoeobFtjzfEES2nsC4It-Zb0ct1PSPgndVmtIU0-N192yxcHW4v0utOy-SPtoDh52HD0va1QnEvXgW4ZFfgOVAw1W87BHnRC3tFiAHsRmc0INRS-Wj4eGZC5LiWyGeX-xqf6kCnx-LtZ_5xMIQMeafe_gySUTeqvTEs6cVQ7FHBWg8q0hrs6omdkXne0_LMVGJCzGb4-sbkPHfciAVgUSaksZzvhE2X4rzbH-kQU8n7AeOEBMj6zoFWkwrIsq0rzqc8o14lHwg4q5FqPih1bKHo0kQtVJsxT1HrR9mpy6wdzAC4Rs1-Y5nCK0bKZclCF5JLKdUqrpHuQxXczeUylI_IoVALOOvi51DfrvbM8eQ735iqOEfFQqi8MK0OBfyEVIOX-KQROEVsHmayxptaY_EnNv2VO4ofmUDeYHOuSDyF_5cDOFy11dpTz2fBcQHqXjz7mlp_7T9_S5BiYQ5Psy-NjiOSdVfWYr3ykwfSv1BLFTIk6XpxSDZxKEgaqVGn9pfivf52LjkMTuSHt3nhTK-y8y0QSrS9eltzgN8jTjGw2DCHLOOiwVj4_vP94ZFd4MDLDAjj27Tnr1BaewVzwBlOlKxQH2ABSw75YC7NjYEy0L6_u9_qhm9PoRtk7mCvhqo_JXqFsftM_nNlFt3h4x2ttxcJZj77f5qYBr2mI2d38GLtuFq_dYGuuqsCFShasLpkiNx23ab8E4oK_uYxTu7eVWSGG4jFdTqcfNIs5GQ_kifNEmbkeV93hZfHOQOsibOa-TY8cWPC74x4gtIOleh2kGoNyKq1G1l8VFUV4rpArU-A (Service: AmazonEC2; Status Code: 403; Error Code: UnauthorizedOperation; Request ID: 8d0cae93-8f06-4754-8ae3-b0e5ee950841){code}",2019-07-02T15:48:03.000-0400
+PRODENG-13289,James Whitely and Simhran Patel (James.Whitely@cofense.com and Simhran.Patel@cofense.com) accounts in Pingdom,Chris Rimondi,,,,2019-07-22T13:53:00.000-0400,,,,,"James Whitely and Simhran Patel (James.Whitely@cofense.com and Simhran.Patel@cofense.com) accounts in Pingdom
+
+This will allow them to start testing the Pingdom API for integration into Community. ",2019-07-22T13:53:56.000-0400
+PRODENG-13232,Artifactory Service User for Vision,Kirk Bater,,,,2019-05-17T10:06:00.000-0400,,,,,"Hi.
+
+I'm looking to create a lambda for PRODENG-13180 that will go through the vision-ova repository and remove any OVAs older than a week old in one folder and older than a month old in another.  I am looking to do this through a service account in Artifactory.
+
+I have the permissions to create this myself, but I don't know if there are any specific ways that we are setting up Service Accounts so I figured I'd put in a ticket.
+
+The specific repository is `vision-ova`, and I will require read and write access to that repository.  As far as I know, I will not need access to any other repository or service.
+
+Thanks,
+Kirk",2019-07-25T10:06:53.000-0400
+PRODENG-12880,AWS GOV read only access for James Prior,James Prior,,,,2019-04-23T16:37:00.000-0400,,,,,"Hi!  I'd like to be able to look at some AWS resources in Govcloud but if I have access, I'm not seeing it in Jumpcloud.
+
+Specifically I'm looking for a lambda function that I think was created there, I'd like to see the parameters it is using to verify the output S3 bucket, see any logs or errors it got running, and see S3 bucket contents to verify that they look right.
+
+I think the way to do that is to request access to something like SSO-AWS-GOV-read in Jumpcloud .  Can I please have access?",2019-07-23T09:19:57.000-0400
+PRODENG-6971,Readonly Access to Training.phishmelms.com instance of LMS,Mohammad Najmuddin,,,,2019-07-05T12:33:00.000-0400,,,,,"As we evaluate AWS Kinesis solution for LMS with help [~Nate.Spencer@phishme.com], we have a request from LMS team to provide reporting requirement for people who have been certified/in process from Data Lake. The access we need is read only and for only training db instance (which I think is training.phishme.lms.com).",2019-07-05T12:33:12.000-0400

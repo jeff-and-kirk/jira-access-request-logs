@@ -7,9 +7,9 @@ from jira import JIRA
 import json
 import datetime
 
-jira_server = "https://jira.corp.phishme.com"
-user_id = 'Jeff.Koors@cofense.com'
-user_pass = 'GavHeartLacKel1977!'
+jira_server = (os.getenv(server_location))
+user_id = (os.getenv(username))
+user_pass = (os.getenv(password))
 options = {'server' : jira_server}
 jira = JIRA(options, basic_auth=(user_id, user_pass))
 

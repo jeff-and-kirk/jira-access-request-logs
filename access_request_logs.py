@@ -12,9 +12,9 @@ import datetime
 from pandas import DataFrame # may be missing some of Pandas modules to make this run effectively
 import re
 
-jira_server = "https://jira.corp.phishme.com"
-user_id = 'Jeff.Koors@cofense.com'
-user_pass = 'GavHeartLacKel1977!'
+jira_server = (os.getenv(server_location))
+user_id = (os.getenv(username))
+user_pass = (os.getenv(password))
 options = {'server' : jira_server}
 # for auth and pass, will need to create secrets, env var or something secure in AWS
 # I validated the response and auth via a successful search in CLI

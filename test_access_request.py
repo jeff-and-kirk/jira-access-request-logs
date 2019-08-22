@@ -13,7 +13,7 @@ user_pass = (os.getenv(password))
 options = {'server' : jira_server}
 jira = JIRA(options, basic_auth=(user_id, user_pass))
 
-email = "Mark.Zigadlo@cofense.com"
+email = "John.Doe@cofense.com"
 issue_dict = {
     'project': {'key': 'PRODENG'},
     'priority': {'name': '2 - High'},
